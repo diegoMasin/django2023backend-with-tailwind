@@ -46,3 +46,5 @@ Update with "config" the lines:
 SECRET_KEY;
 DEBUG;
 ALLOWED_HOSTS
+
+### After Here follow the commits
