@@ -1,4 +1,5 @@
 <!-- base.html -->
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,15 +18,15 @@
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="{\% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body class="flex flex-col min-h-screen">
-    {\% include "includes/menu.html" %}
+    {% include "includes/menu.html" %}
 
-    <main class="flex-auto">{\% block content %}{\% endblock content %}</main>
+    <main class="flex-auto">{% block content %}{% endblock content %}</main>
 
-    {\% include "includes/footer.html" %}
+    {% include "includes/footer.html" %}
 
-    <script src="{\% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>
